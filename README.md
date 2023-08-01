@@ -3,7 +3,7 @@ This repository provides PyTorch implementations of **RAKGE** as described in th
 
 
 <img width="600" alt="RAKGE" src="https://github.com/learndatalab/RAKGE/assets/116534675/2330257f-ea83-4a99-bd0d-cc754dcddb27">
-
+<img width="1204" alt="RAKGE" src="https://github.com/learndatalab/RAKGE/assets/116534675/a94d2b69-4c32-48be-aff9-d75c25f5073e">
 ## Citing
 If you want to mention RAKGE for your research, please consider citing the following paper:
 
