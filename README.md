@@ -23,6 +23,11 @@ If you want to mention RAKGE for your research, please consider citing the follo
 
 
 ## Basic Usage
+### Download the datasets
+Download the dataset from the following link: 
+    https://drive.google.com/drive/folders/1ecUQvVTSDqUdY3_PVDeNUvg5LDaTwxZ7?usp=sharing
+
+and save it in the '/dataset' directory."
 
 ### Preprocess the datasets
 To preprocess their numeric attributes, please execute the following command:
