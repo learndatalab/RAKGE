@@ -25,7 +25,7 @@ If you want to mention RAKGE for your research, please consider citing the follo
 ## Basic Usage
 
 ### Preprocess the datasets
-To unzip knowledge graphs and preprocess their numeric attributes, please execute the following command:
+To preprocess their numeric attributes, please execute the following command:
 
     chmod +x ./preprocess.sh && ./preprocess.sh
 
