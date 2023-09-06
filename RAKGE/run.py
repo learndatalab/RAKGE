@@ -191,7 +191,7 @@ class Runner(object):
                     pred = self.model(self.g, subj, rel)
 
                 elif self.p.literal:
-                    if self.p.name == 'RALGE':
+                    if self.p.name == 'RAKGE':
                         pred = self.model(self.g, subj, rel, labels, neg, n_label)
 
                     '''elif self.p.name == 'KBLN':
