@@ -27,27 +27,27 @@ If you want to mention RAKGE for your research, please consider citing the follo
 Download the dataset from the following link: 
     https://drive.google.com/drive/folders/1ecUQvVTSDqUdY3_PVDeNUvg5LDaTwxZ7?usp=sharing
 
-and save it in the '/dataset' directory."
+and save it in the '/dataset' directory.
 
 ### Preprocess the datasets
 To preprocess their numeric attributes, please execute the following command:
 
-    chmod +x ./preprocess.sh && ./preprocess.sh
+    python preprocess_kg_num_lit.py --dataset {credit, spotify, US-cities}
 
 ### Reproduce the results
 Now you are ready to train and evaluate RAKGE and other baselines. To reproduce the results provided in the paper, please execute the corresponding command for each model as follows:
 
 #### RAKGE
-    python run.py --gpu 0 --n_layer 0  --literal --init_dim 200 --att_dim 200 --head_num 5 --name RAKGE --scale 0.25 --order 0.25 --data {credit, spotify} --drop 0.7 
+    python run.py --gpu 0 --n_layer 0  --literal --init_dim 200 --att_dim 200 --head_num 5 --name RAKGE --scale 0.25 --order 0.25 --data {credit, spotify, US-cities} --drop 0.7 
 
 #### TransE
-    python run.py --gpu 0 --n_layer 0 --init_dim 200 --name lte --score_func transe --opn mult --x_ops "d" --hid_drop 0.7  --data {credit,spotify}
+    python run.py --gpu 0 --n_layer 0 --init_dim 200 --name lte --score_func transe --opn mult --x_ops "d" --hid_drop 0.7  --data {credit, spotify, US-cities}
     
 #### LiteralE
-    python run.py --gpu 0 --n_layer 0 --literal --init_dim 200 --name TransELiteral_gate --data {credit, spotify} --input_drop 0.7 
+    python run.py --gpu 0 --n_layer 0 --literal --init_dim 200 --name TransELiteral_gate --data {credit, spotify, US-cities} --input_drop 0.7 
 
 #### R-GCN
-    python run.py --gpu 0 --n_layer 1 --score_func transe --opn mult --gcn_dim 150 --init_dim 150 --num_base 5 --encoder rgcn --name repro --data {credit, spotify} --hid_drop 0.7
+    python run.py --gpu 0 --n_layer 1 --score_func transe --opn mult --gcn_dim 150 --init_dim 150 --num_base 5 --encoder rgcn --name repro --data {credit, spotify, US-cities} --hid_drop 0.7
 
 
 
