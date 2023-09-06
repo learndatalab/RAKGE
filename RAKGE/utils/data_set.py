@@ -60,7 +60,7 @@ class TestDataset(Dataset):
         triple, label = torch.tensor(ele['triple'], dtype=torch.long), np.int32(ele['label'])
 
         label = self.get_label(label)
-        return triple, label,  triple[2], label, label
+        return triple, label,  triple[2], label
 
     def get_label(self, label):
         """
