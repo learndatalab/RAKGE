@@ -24,10 +24,10 @@ If you want to mention RAKGE for your research, please consider citing the follo
 
 ## Basic Usage
 ### Download the datasets
-Download the dataset from the following link: 
+Download the datasets from the following link: 
     https://drive.google.com/drive/folders/1ecUQvVTSDqUdY3_PVDeNUvg5LDaTwxZ7?usp=sharing
 
-and save it in the '/dataset' directory.
+and save them in the '/dataset' directory.
 
 ### Preprocess the datasets
 To preprocess their numeric attributes, please execute the following command:
@@ -56,7 +56,7 @@ Now you are ready to train and evaluate RAKGE and other baselines. To reproduce 
 
 
 ## Miscellaneous
-Please send any questions you might have about the code and/or the algorithm to gayeongkim@o365.skku.edu
+Please send any questions you might have about the code and/or the algorithm to gayeongkim@o365.skku.edu.
 
 
 
